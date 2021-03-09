@@ -1,4 +1,5 @@
 import random
+import time
 
 print("Szamjatek")
 name=input("Neved?\n")
@@ -11,7 +12,7 @@ if x!="y":
 
 print("Jatek kezdodik")
 
-random.seed(1)
+random.seed(time.time())
 number=random.randint(1, 100)
 tip=0
 while tip!=number:
