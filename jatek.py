@@ -15,12 +15,15 @@ print("Jatek kezdodik")
 random.seed(time.time())
 number=random.randint(1, 100)
 tip=0
+count=1
 while tip!=number:
   tip_str=input("Tippelj! ")
   tip=int(tip_str)
   if tip>number:
     print("Kisebb...")
+    count+=1
   elif tip<number:
     print("Nagyobb...")
-print("Eltalaltad {}, a szam valoban {} volt!".format(name,number))
+    count+=1
+print("Eltalaltad {}, a szam valoban {} volt! {} tippbol talaltad el".format(name,number,count))
 
